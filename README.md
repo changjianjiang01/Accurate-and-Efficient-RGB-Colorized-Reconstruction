@@ -1,2 +1,2 @@
-# Accurate-and-Efficient-RGB-Colorized-Reconstruction
-The evaluation method of the accurate and efficient RGB-colorized reconstruction.
+# Accurate-and-Efficient-RGB-Colorized-Mapping
+The evaluation method of the accurate and efficient RGB-colorized mapping.
