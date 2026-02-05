@@ -1,0 +1,44 @@
+common:
+  data_dir: data/CBD_Building_01  # Data directory path (relative to project root)
+  image_dir: all_image  # Image directory name (relative to data_dir)
+  pcd_dir: all_pcd_body  # Point cloud directory name (relative to data_dir)
+  image_pose_file: all_image/image_poses.txt  # Image pose file path (relative to data_dir)
+  lidar_pose_file: all_pcd_body/lidar_poses.txt  # LiDAR pose file path (relative to data_dir)
+  downsample_voxel: 0.05
+  colormap: output/colormap.pcd
+  map: output/map.pcd
+
+geometry:
+  resolution: 0.03  # HESAI XT32 0.0, different for different LiDARs
+  voxel_size: 0.2   
+  planarity_threshold: 0.72  # Planarity threshold, only count voxels with planarity greater than this value
+  curvature_threshold: 0.1  # Curvature threshold, only count voxels with curvature less than this value (smaller curvature means closer to plane)
+  min_thickness_threshold: 0.0  # Minimum thickness threshold, only count voxels with thickness greater than this value
+  min_points_per_voxel: 15  # Minimum number of points per voxel, voxels with fewer points will be filtered
+  sigma_multiplier: 1  # 3-sigma rule multiplier, used to remove thickness outliers
+
+coverage:
+  voxel_size: 1.0
+
+projection:
+  Rcl: [0.00610193,-0.999863,-0.0154172,
+        -0.00615449,0.0153796,-0.999863,
+        0.999962,0.00619598,-0.0060598] 
+  Pcl: [0.0194384, 0.104689,-0.0251952]
+  # Camera intrinsics
+  cam_model: Pinhole
+  cam_width: 1280
+  cam_height: 1024
+  scale: 0.5
+  cam_fx: 1293.56944
+  cam_fy: 1293.3155
+  cam_cx: 626.91359
+  cam_cy: 522.799224
+  # Distortion parameters
+  cam_d0: -0.076160
+  cam_d1: 0.123001
+  cam_d2: -0.00113
+  cam_d3: 0.000251
+  # Projection evaluation parameters
+  projection_window_size: 15  # For each image, use N frames of point clouds on each side for projection (total 2N+1 frames)
+
