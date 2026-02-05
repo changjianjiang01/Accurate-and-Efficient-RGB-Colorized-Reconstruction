@@ -73,6 +73,32 @@ To evaluate all above three metrics in one manner and get the results precisely,
 python3 main.py
 ```
 
+## 📊 Visualization
+
+### Geometry Accuracy
+
+<div align="center">
+<img src="img/geometry_accuracy.png" alt="Geometry Accuracy" width="500">
+</div>
+
+### Surface Coverage
+
+<div align="center">
+<img src="img/surface_coverage.png" alt="Surface Coverage" width="500">
+</div>
+
+### Projection Accuracy
+
+**Photometric Error:**
+
+<div align="center">
+<img src="img/photo_error.png" alt="Photometric Error" width="800">
+</div>
+
+**Valid Pixel Ratio:**
+<div align="center">
+<img src="img/pixel_valid.png" alt="Valid Pixel" width="400">
+</div>
 
 ## 🤗 Citation
 If you find this repository useful, please use the following BibTeX entry for citation.
