@@ -1,4 +1,4 @@
-# [2025 ICRA]RISED: Accurate and Efficient RGB-Colorized Mapping Using Image Selection and Point Cloud Densification
+# [2025 ICRA] RISED: Accurate and Efficient RGB-Colorized Mapping Using Image Selection and Point Cloud Densification
 
 <div align="center">
 <a href="https://ieeexplore.ieee.org/abstract/document/11127540"><img src='https://img.shields.io/badge/IEEE-11127540-00629B' alt='Paper'></a>
